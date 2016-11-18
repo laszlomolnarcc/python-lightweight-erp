@@ -59,13 +59,13 @@ def choose():
         table = add(table)
         data_manager.write_table_to_file(file_name, table)
     elif option == "3":
-        show_table()
+        show_table(table)
         remove_id = ui.get_inputs(
             ["Enter the ID of the record to be removed: "], "")
         table = remove(table, remove_id[0])
         data_manager.write_table_to_file(file_name, table)
     elif option == "4":
-        show_table()
+        show_table(table)
         update_id = ui.get_inputs(
             ["Enter the ID of the record to be updated: "], "")
         table = update(table, update_id[0])
